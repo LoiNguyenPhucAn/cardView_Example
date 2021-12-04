@@ -8,11 +8,15 @@ android {
     defaultConfig {
         applicationId "com.example.cardview"
         minSdk 21
-        targetSdk 31
+        targetSdk 26
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        viewBinding true;
     }
 
     buildTypes {
@@ -30,6 +34,8 @@ android {
 dependencies {
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:gridlayout-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.4'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
